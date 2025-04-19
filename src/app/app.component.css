@@ -1,0 +1,33 @@
+.facebook-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    overflow: hidden;
+    padding-top: 56px; /* Height of header */
+}
+
+.sidebar-col {
+    background-color: #f0f2f5;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    position: sticky;
+    top: 56px;
+}
+
+.feed-col {
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    padding: 15px;
+}
+
+.right-panel-col {
+    background-color: #f0f2f5;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    position: sticky;
+    top: 56px;
+}

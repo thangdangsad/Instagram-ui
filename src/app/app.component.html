@@ -1,1 +1,11 @@
-<router-outlet></router-outlet>
+<!-- app.component.html -->
+<header>
+    <nav>
+        <a routerLink="/posts">Posts</a>
+        <button *ngIf="authService.isLoggedIn()" (click)="authService.logout()">Logout</button>
+    </nav>
+</header>
+
+<main>
+    <router-outlet></router-outlet>
+</main>
